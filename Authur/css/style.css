@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+/* ============= Common Css End============= */
+/* ========================================= */
+/* ============= Header Part  Start============= */
+#menu_part{
+    height: 100px;
+}
+.menu_logo{
+    width: 170px;
+    float: left;
+    padding-top: 30px;
+}
+.menu_item{
+    width: 1000px;
+    float: left;
+}
+.menu_item ul{
+    display: flex;
+    justify-content: end;
+}
+.menu_item ul li a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #484c55;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 100px;
+    padding: 0 22px;
+    position: relative;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+.menu_item ul li a:hover{
+    color: #60d1d3;
+    background: #f8f9fb;
+
+}
+.menu_item ul li a::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #49cbcd;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+
+}
+.menu_item ul li a::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background: #49cbcd;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+
+}
+.menu_item ul li a:hover::after,
+.menu_item ul li a:hover::before{
+    width: 50%;
+}
+
+/* ============= Header Part  End============= */
+/* ========================================= */
+/* ========================================= */
+/* ============= Banner Part  Start============= */
+#banner_part{
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 147px 0px;
+    text-align: center;
+}
+.banner_text h1{
+    color: #ffffff;
+    font-size: 63px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 8px;
+}
+.banner_text p{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 63px;
+}
+.banner_text a{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    border: 3px solid #ffffff;
+    padding: 0px 36px;
+    line-height: 65px;
+    border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+.banner_text a:hover{
+    color: #484c55;
+    border-color: #49cbcd;
+}
+/* ============= Banner Part  End============= */
+/* ========================================= */
+/* ========================================= */
+/* ============= Blog Part  Start============= */
+#blog_part{
+    padding: 100px 0px;
+}
+.blog_main{
+    display: flex;
+}
+.blog_inner{
+    margin-right: 30px;
+    text-align: center;
+}
+.blog_inner i{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #49cbcd;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #49cbcd;
+    margin-bottom: 4px;
+}
+.blog_inner h3{
+    color: #4e525d;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+.blog_inner p{
+    color: #4e525d;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 25px;
+}
+.blog_inner a{
+    color: #49cbcd;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #49cbcd;
+    padding: 0px 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+.blog_inner a:hover{
+    background: #49cbcd;
+    color: #ffff;
+}
+.blog_inner:last-child{
+    margin-right: 0px;
+}
+/* ============= Blog Part  End============= */
+/* ========================================= */
+/* ========================================= */
+/* ============= Portfolio Part  Start============= */
+#Portfolio_part{
+    padding: 60px 0px;
+    background: #f1f1f1;
+}
+.Portfolio_main h2{
+    text-align: center;
+    font-size: 42px;
+    color: #4e525d;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+.Portfolio_inner ul{
+    display: flex;
+   
+}
+/* .Portfolio_inner ul li{
+    width: 30%;
+} */
+.Portfolio_inner ul li img{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.Portfolio_btn {
+    text-align: center;
+}
+.Portfolio_btn a{
+    color: #49cbcd;
+    padding: 0px 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+.Portfolio_btn a:hover{
+    background: #49cbcd;
+    color: #ffff;
+}
+/* ============= Portfolio Part  End============= */
+/* ========================================= */
+/* ========================================= */
+/* ============= The Team Part  Start============= */
+#team_part{
+    padding: 100px 0px;
+}
+.team_main{
+    display: flex;
+}
+.team_inner{
+    width: 23%;
+    text-align: center;
+    margin-right: 30px;
+}
+.team_inner img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #9a9a9c;
+    border-radius: 50%;
+    background: #9a9a9c;
+    margin-bottom: 30px;
+    
+}
+.team_inner h3{
+    color: #4e525d;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.team_inner h5{
+    color: #4e525d;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+}
+.team_inner p{
+    color: #4e525d;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.team_inner:last-child{
+    margin-right: 0px;
+}
+/* ============= The Team Part  End============= */
+/* ========================================= */
+/* ========================================= */
+/* ============= Header Part  Start============= */
+#priceing_part{
+    padding: 100px 0px;
+    background: #f1f1f1;
+}
+.priceing_raw{
+    display: flex;
+}
+.priceing_col {
+	width: 31.62%;
+	text-align: center;
+	margin-right: 30px;
+}
+.priceing_col:last-child{
+    margin-right: 0px;
+}
+.priceing_col h4{
+    color: #f1f1f1;
+    background: #485460;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+.priceing_col h5{
+    color: #485460;
+    background: #f8f9fb;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0px;
+}
+.priceing_col ul li{
+    background: #ffff;
+    color: #8c9299;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0px;
+    border-bottom: 1px solid#ecf0f1;
+}
+.priceing_btn{
+    padding: 30px 0px;
+    background: #f8f9fb;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.priceing_btn a{
+    padding: 10px 55px;
+    color: #ffff;
+    background: #788492;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+.priceing_col:hover h4,
+.priceing_col:hover .priceing_btn a{
+    background:#49cbcd;
+}
+/* ============= Header Part  End============= */
+/* ========================================= */
+/* ========================================= */
+/* ============= Footer Part  Start============= */
+#footer_part{
+    background: url(../img/footer_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+.footer_head h2{
+    color: #ffff;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.fot_inner{
+    display: flex;
+   
+}
+.fot_left{
+    width: 50%;
+    margin-top: 30px;
+}
+.fot_left ul{
+    display: flex;
+}
+.fot_left ul li{
+    padding: 10px;
+
+
+}
+
+.fot_left h3{
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.fot_left ul li i{
+    color: #bface2;
+    font-size: 25px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+   
+}
+.fot_left ul li i:hover{
+    color: #49cbcd;
+}
+.fot_left p{
+    color: #bface2;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.fot_rig{
+    margin-top: 30px;
+}
+.fot_rig .name{
+    padding: 10px 32px;
+    margin-right: 10px;
+   justify-content: start;
+}
+.fot_rig .mass{
+    padding: 40px 144px;
+    margin: 10px 0px;
+}
+.fot_button {
+    text-align: right;
+    
+}
+.fot_button a{
+    padding: 10px 30px;
+    color: #ffff;
+    background: #788492;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.fot_button a:hover{
+    background-color: #49cbcd;
+}
+/* ============= Footer Part  End============= */
+/* ========================================= */
